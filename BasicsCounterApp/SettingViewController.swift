@@ -9,8 +9,15 @@ import UIKit
 
 class SettingViewController: UIViewController {
 
+    @IBOutlet private weak var decideButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupButton()
+    }
+    
+    private func setupButton() {
+        decideButton.layer.cornerRadius = 50
     }
 }

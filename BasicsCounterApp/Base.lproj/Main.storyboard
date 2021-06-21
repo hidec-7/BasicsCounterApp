@@ -3,8 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -64,7 +64,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Timer" id="1Yc-Ng-SAF">
                         <barButtonItem key="rightBarButtonItem" title="秒数設定" style="plain" id="nTw-pT-MzF">
-                            <color key="tintColor" name="AccentColor"/>
+                            <connections>
+                                <segue destination="R2Z-Dq-xeL" kind="show" id="A18-G8-5za"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -75,6 +77,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="118.52678571428571"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="0fR-Mm-l0f">
+            <objects>
+                <viewController id="R2Z-Dq-xeL" customClass="SettingViewController" customModule="BasicsCounterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gm3-2W-ZzA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9o0-9A-Eo2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="twz-nL-tbe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6PK-aW-oDE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1910" y="119"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="afs-5d-M6f">
@@ -96,8 +114,8 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

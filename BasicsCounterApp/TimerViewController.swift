@@ -8,7 +8,7 @@
 import UIKit
 
 class TimerViewController: UIViewController {
-    
+        
     @IBOutlet private weak var startButton: UIButton!
     @IBOutlet private weak var stopButton: UIButton!
     

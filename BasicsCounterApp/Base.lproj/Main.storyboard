@@ -38,6 +38,9 @@
                                         <state key="normal" title="Start">
                                             <color key="titleColor" red="0.95865618360000004" green="0.96549153239999996" blue="0.98599757860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="startButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9I-k7-NdO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hkk-Ff-pXG">
                                         <rect key="frame" x="185" y="0.0" width="130" height="130"/>
@@ -46,6 +49,9 @@
                                         <state key="normal" title="Stop">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="stopButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NIU-LI-d9d"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -65,13 +71,15 @@
                     <navigationItem key="navigationItem" title="Timer" id="1Yc-Ng-SAF">
                         <barButtonItem key="rightBarButtonItem" title="秒数設定" style="plain" id="nTw-pT-MzF">
                             <connections>
-                                <segue destination="R2Z-Dq-xeL" kind="show" id="A18-G8-5za"/>
+                                <action selector="settingButtonAction:" destination="BYZ-38-t0r" id="FC1-yH-8tE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="countDownLabel" destination="wnm-Ug-Btb" id="5K0-so-hGv"/>
                         <outlet property="startButton" destination="YyZ-vz-wOf" id="XGU-eK-KKj"/>
                         <outlet property="stopButton" destination="Hkk-Ff-pXG" id="8fS-Ax-dWR"/>
+                        <segue destination="R2Z-Dq-xeL" kind="show" identifier="settingVC" id="8fq-Ec-51T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

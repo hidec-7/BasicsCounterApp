@@ -105,6 +105,9 @@
                                 <state key="normal" title="Decide">
                                     <color key="titleColor" red="0.0" green="0.57987035890000005" blue="0.53652885729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="decisionButtonAction:" destination="R2Z-Dq-xeL" eventType="touchUpInside" id="yCW-0u-FF3"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MzT-UD-zvl">
                                 <rect key="frame" x="0.0" y="222" width="414" height="160"/>
@@ -125,7 +128,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="twz-nL-tbe"/>
                     <connections>
-                        <outlet property="decideButton" destination="y7z-y1-wY8" id="Wl9-NO-bCK"/>
+                        <outlet property="deciedButton" destination="y7z-y1-wY8" id="aoe-fh-zod"/>
+                        <outlet property="timerSettingPicker" destination="MzT-UD-zvl" id="oce-df-XVf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6PK-aW-oDE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
